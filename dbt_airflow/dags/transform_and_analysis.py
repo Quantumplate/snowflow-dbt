@@ -1,8 +1,11 @@
+from datetime import datetime
+import os
+
 from airflow import DAG
 from airflow.operators.python import PythonOperator, BranchPythonOperator
 from airflow.operators.bash import BashOperator
 from airflow.operators.dummy_operator import DummyOperator
-from datetime import datetime
+
 
 
 default_args = {
