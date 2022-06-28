@@ -64,6 +64,7 @@ x-airflow-common:
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - ./dbt:/dbt
+    - ./.dbt:/.dbt
     - ./dags:/dags
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
